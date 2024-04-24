@@ -1,0 +1,70 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(221, 191, 243);
+}
+
+#sign-in-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background-color: brown; */
+    width: 250px;
+    height: 200px;
+}
+
+.container {
+    justify-content: space-around;
+    align-items: center;
+    display: flex;
+    background-color: rgb(163, 121, 180);
+    border-radius: 5%;
+    box-shadow: 0 10px 20px rgb(70, 10, 103);
+    min-width: 450px;
+    min-height: 300px;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#input-box {
+    width: 250px;
+    align-self: center;
+    align-items: center;
+    height: 100px;
+    display: flex;
+    flex-direction: column; 
+    gap: 10px;
+    /* background-color: blue; */
+}
+
+#username, #password {
+    width: 200px;
+    height: 30px;
+    border-radius: 5px;
+    border: none;
+    align-items: center;
+}
+
+#sign-in-text {
+    font-family: Arial, sans-serif;
+    color: rgb(70, 10, 103);
+    font-size: 40px;
+}
+
+#submit-button {
+    border-radius: 10px;
+    width: 100%;
+    height: 40px;
+    border:none;
+    color:rgb(70, 10, 103);
+    background-color: rgb(255, 255, 255);
+}
+
+#submit-button:hover {
+    background-color: rgb(142, 54, 192);
+    color: white;
+}
