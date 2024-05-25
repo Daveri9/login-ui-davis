@@ -7,35 +7,40 @@ html, body {
     background-color: rgb(221, 191, 243);
 }
 
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(163, 121, 180);
+    border-radius: 5%;
+    box-shadow: 0 10px 20px rgb(70, 10, 103);
+    min-width: 300px;
+    min-height: 300px;
+    max-width: 450px;
+    gap: 20px;
+}
+
+#sign-in-text {
+    font-family: Arial, sans-serif;
+    color: rgb(70, 10, 103);
+    font-size: 40px;
+    margin: 0;
+}
+
+#sign-in-box {
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    height: 200px;
+    align-items: center;
+}
 
 .form {
     display: flex;
     align-items: center;
     width: 100%;
     flex-direction: column;
-}
-
-
-#sign-in-box {
-    display: flex;
-    flex-direction: column;
-    /* justify-content: center; */
-    width: 250px;
-    height: 200px;
-    align-items: center;
-}
-
-.container {
-    justify-content: space-around;
-    align-items: center;
-    display: flex;
-    background-color: rgb(163, 121, 180);
-    border-radius: 5%;
-    box-shadow: 0 10px 20px rgb(70, 10, 103);
-    min-width: 450px;
-    min-height: 300px;
-    flex-direction: column;
-    gap: 20px;
 }
 
 #input-box {
@@ -55,13 +60,6 @@ html, body {
     align-items: center;
 }
 
-#sign-in-text {
-    font-family: Arial, sans-serif;
-    color: rgb(70, 10, 103);
-    font-size: 40px;
-    margin: 0;
-}
-
 #submit-button {
     border-radius: 10px;
     align-items: center;
@@ -76,3 +74,14 @@ html, body {
     background-color: rgb(142, 54, 192);
     color: white;
 }
+
+/* media query for smaller screens
+@media (max-width: 500px) {
+    .container {
+        width: 100%;
+    }
+
+    #username, #password, #submit-button {
+        width: 90%;
+    }
+} */
